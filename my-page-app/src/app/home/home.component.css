@@ -1,9 +1,88 @@
 .aboutMeHelper{
     width: 60%;
+    margin-top: 5%;
     background-color: rgba(0, 0, 0, 0.5) ;
 }
 
+img{
+    margin-bottom: 5%;
+}
+
 .textHelper{
-    margin-left: 20%;
+    margin-left: 36%;
     text-decoration: underline;
+}
+
+@media (max-width: 412px){
+
+    .aboutMeHelper{
+        width: 90%;
+        background-color: rgba(0, 0, 0, 0.5) ;
+    }
+
+    .textHelper{
+        text-decoration: underline;
+        margin-right: 40%;
+    }
+
+    img{
+        width: 80%;
+        margin-top: 2%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 280px){
+
+    .aboutMeHelper{
+        width: 90%;
+        margin-top: 50%;
+        background-color: rgba(0, 0, 0, 0.5) ;
+    }
+
+    img{
+        width: 80%;
+        margin-top: 2%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 540px){
+
+    .aboutMeHelper{
+        width: 90%;
+        margin-top: 20%;
+        background-color: rgba(0, 0, 0, 0.5) ;
+    }
+
+    .textHelper{
+        margin-right: 30%;
+        text-decoration: underline;
+    }
+
+    img{
+        width: 80%;
+        margin-top: 2%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 1280px){
+
+    .aboutMeHelper{
+        width: 80%;
+        margin-top: 5%;
+        background-color: rgba(0, 0, 0, 0.5) ;
+    }
+
+    .textHelper{
+        margin-left: 45%;
+        text-decoration: underline;
+    }
+
+    img{
+        width: 80%;
+        margin-top: 2%;
+        margin-left: 10%;
+    }
 }
