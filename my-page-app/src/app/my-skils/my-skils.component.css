@@ -1,0 +1,28 @@
+.mainDiv {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: auto;
+}
+
+.helpIcons {
+    width: 40%;
+    margin-right: 7%;
+}
+
+.helperTextIcons{
+    margin-left: 7%;
+}
+
+/* scroll menu */
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu div {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
