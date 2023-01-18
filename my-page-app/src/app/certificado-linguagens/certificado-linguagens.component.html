@@ -1,0 +1,58 @@
+<div class="container-fluid aboutMeHelper">
+
+    <br>
+    <h3 *ngIf="getLanguageValue">Certificado de linguagens</h3>
+    <h3 *ngIf="!getLanguageValue">Certificado de linguagens</h3>
+    <hr>
+    <table class="table text-white table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th *ngIf="getLanguageValue" scope="col">
+                    <i class="bi bi-translate"></i>
+                    Linguagem
+                </th>
+                <th *ngIf="!getLanguageValue" scope="col">
+                    <i class="bi bi-translate"></i>
+                    Language
+                </th>
+                <th scope="col">
+                    <i class="bi bi-link"></i>
+                    Link
+                </th>
+            </tr>
+        </thead>
+        <tbody class="table-bg">
+            <tr>
+                <td *ngIf="getLanguageValue">Inglês</td>
+                <td *ngIf="!getLanguageValue">English</td>
+                <td>
+                    <a href="https://drive.google.com/drive/folders/1n6JOcX6z-fdTpKK9gisBUuQV0-x6UzuT?usp=share_link" target="_blank">
+                        <i class="fa-brands fa-google-drive"></i>
+                        Google Drive
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td *ngIf="getLanguageValue">Francês(Futuramente)</td>
+                <td *ngIf="!getLanguageValue">French(hereafter)</td>
+                <td>
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-google-drive"></i>
+                        Google Drive
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td *ngIf="getLanguageValue">Japonês(Futuramente)</td>
+                <td *ngIf="!getLanguageValue">Japanese(hereafter)</td>
+                <td>
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-google-drive"></i>
+                        Google Drive
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+</div>

@@ -1,5 +1,51 @@
-<app-spinner *ngIf="isLoading"></app-spinner>
-<div class="container aboutMeHelper" *ngIf="!isLoading">
-    <h4 class="text-white textHelper">Bem vindo</h4>
-    <img src="https://i.pinimg.com/originals/b4/3e/ca/b43eca79f91fb0325bfc21e7b8d5f43f.gif" alt="welcome">
+<div class="container aboutMeHelper">
+    <br>
+    <h5 *ngIf="getLanguageValue" class="text-white">Sobre min</h5>
+    <h5 *ngIf="!getLanguageValue" class="text-white">About me</h5>
+    <hr>
+    <P *ngIf="getLanguageValue" class="text-dark" style="font-weight: bold;">
+        Meu nome é lucas tenho {{idade}} anos e estou em busca de oportunidade como
+        desenvolvedor Web Fullstack. Minha paixão começou quando descobri o 
+        jogo Minecraft e aquilo foi algo incrivel quando tentei entender como
+        o que exibia na tela era possivel.Então quando descobri a linguagem foi paixão 
+        a primeiro código pelo Java.Era incrivel saber como um software conseguia fazer varias animações, 
+        seja com particulas ou ate a musica do ambiente.
+        Hoje estou buscando conhecimento e experiencia profissional Angular, Spring boot, Cypress, SQL.
+        Pretendo tambem me tornar um hacker certificado (CEH) e ter certificação em Fluencia em Ingles(IELTS),
+        Frances(CTF) e Japones(JLPT) e trabalhar mundo.
+    </P>
+    <P *ngIf="!getLanguageValue" class="text-dark" style="font-weight: bold;">
+        My name is lucas I am {{idade}} years old and I am looking for an opportunity like
+        Fullstack web developer. My passion started when I discovered the
+        Minecraft game and that was something amazing when I tried to understand how
+        what was displayed on the screen was possible. So when I discovered the language it was passion
+        the first code by Java. It was incredible to know how a software managed to make several animations,
+        whether with particles or even the ambient music.
+        Today I'm looking for knowledge and professional experience in Angular, Spring boot, Cypress, SQL.
+        I also intend to become a certified hacker (CEH) and have certification in Fluency in English (IELTS),
+        French(CTF) and Japanese(JLPT) and working world.
+    </P>
+
+    <div *ngIf="getLanguageValue" style="background-color: rgb(22, 190, 22); border-radius: 10px;">
+        <cite>
+            <p class="ms-2">
+                “Não creio que haja uma emoção mais intensa para um 
+                inventor do que ver suas criações funcionando. 
+                Essas emoções fazem você esquecer de comer, de dormir, 
+                de tudo.” - Nikola Tesla
+            </p>
+        </cite>
+    </div>
+    <div *ngIf="!getLanguageValue" style="background-color: rgb(22, 190, 22); border-radius: 10px;">
+        <cite>
+            <p class="ms-2">
+                “I don't think there is a more intense emotion for a
+                inventor than to see his creations working.
+                These emotions make you forget to eat, sleep,
+                of everything." -Tesla, Nikola
+            </p>
+        </cite>
+    </div>
+
+    <br>
 </div>

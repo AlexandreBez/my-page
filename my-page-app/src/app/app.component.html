@@ -1,9 +1,97 @@
-<app-header></app-header>
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <router-outlet></router-outlet>
-        </div>
+<main>
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <a href="#" class="d-flex align-items-center text-white text-decoration-none">
+          <img src="assets/myImage.jpg" alt="lucas alexandre image" width="32" height="32" class="rounded-circle me-2">
+          <span class="fs-4">Lucas Alexandre</span>
+        </a>
+      </a>
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <button *ngIf="getLanguageValue" class="btn btn-info" (click)="changeLanguage()">
+            Portugues <i class="bi bi-arrow-right-circle"></i> English
+          </button>
+          <button *ngIf="!getLanguageValue" class="btn btn-info" (click)="changeLanguage()">
+            English <i class="bi bi-arrow-right-circle"></i> Portugues
+          </button>
+        </li>
+        <br>
+        <li class="nav-item" routerLinkActive="active">
+          <a routerLink="Home" class="nav-link text-white">
+            <i class="fa-solid fa-house"></i>
+            Home
+          </a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a *ngIf="getLanguageValue" routerLink="MeusCertificados" class="nav-link text-white">
+            <i class="fa-solid fa-user-secret"></i>
+            Meus Certificados
+          </a>
+          <a *ngIf="!getLanguageValue" routerLink="MeusCertificados" class="nav-link text-white">
+            <i class="fa-solid fa-user-secret"></i>
+            My Certificates
+          </a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a *ngIf="getLanguageValue" routerLink="MeuConhecimento" class="nav-link text-white">
+            <i class="fa-solid fa-laptop-code"></i>
+            Meu Conhecimento
+          </a>
+          <a *ngIf="!getLanguageValue" routerLink="MeuConhecimento" class="nav-link text-white">
+            <i class="fa-solid fa-laptop-code"></i>
+            My knowledge
+          </a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a *ngIf="getLanguageValue" routerLink="CertificadoDeLinguagens" class="nav-link text-white">
+            <i class="bi bi-globe2"></i>
+            Certificado de Linguagens
+          </a>
+          <a *ngIf="!getLanguageValue" routerLink="CertificadoDeLinguagens" class="nav-link text-white">
+            <i class="bi bi-globe2"></i>
+            Language Certificate
+          </a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a *ngIf="getLanguageValue" routerLink="Projetos" class="nav-link text-white">
+            <i class="bi bi-cpu"></i>
+            Projetos
+          </a>
+          <a *ngIf="!getLanguageValue" routerLink="Projetos" class="nav-link text-white">
+            <i class="bi bi-cpu"></i>
+            Projects
+          </a>
+        </li>
+        <li class="nav-item">
+          <a *ngIf="getLanguageValue" href="https://www.linkedin.com/in/lucasalexandrebezpiancoski/" target="_blank" class="nav-link text-white">
+            <i class="fa-brands fa-linkedin"></i>
+            Linkedin
+          </a>
+          <a *ngIf="!getLanguageValue" href="https://www.linkedin.com/in/lucasalexandrebezpiancoski/?locale=en_US" target="_blank" class="nav-link text-white">
+            <i class="fa-brands fa-linkedin"></i>
+            Linkedin
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/AlexandreBez?tab=repositories" target="_blank" class="nav-link text-white">
+            <i class="fa-brands fa-github"></i>
+            Github
+          </a>
+        </li>
+        <li class="nav-item">
+          <a *ngIf="getLanguageValue" href="https://drive.google.com/drive/folders/1talEQXJo5M_nhzummyFPrVcYcociSbVP?usp=share_link" target="_blank" class="nav-link text-white">
+            <i class="fa-brands fa-google-drive"></i>
+            Meu Curriculo
+          </a>
+          <a *ngIf="!getLanguageValue" href="https://drive.google.com/drive/folders/1Ejbs7yINd2YHXv_PkHCgeXmG3ZfUqDMb?usp=share_link" target="_blank" class="nav-link text-white">
+            <i class="fa-brands fa-google-drive"></i>
+            My Resume
+          </a>
+        </li>
+      </ul>
     </div>
-</div>
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white" style="width: 70%;">
+      <router-outlet></router-outlet>
+    </div>
+  </main>

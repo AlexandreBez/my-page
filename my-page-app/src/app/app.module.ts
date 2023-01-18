@@ -2,24 +2,24 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { AboutMeComponent } from './about-me/about-me.component';
+import { MeusCertificadosComponent } from './meus-certificados/meus-certificados.component';
 import { HomeComponent } from './home/home.component';
-import { MySkilsComponent } from './my-skils/my-skils.component';
-import { SpinnerComponent } from './shared/spinner/spinner.component';
+import { MeuConhecimentoComponent } from './meu-conhecimento/meu-conhecimento.component';
 import { AppRoutes } from './routes/app-routes.module';
 import { RouterModule } from '@angular/router';
-import { ShortenPipe } from './shared/pipes/shorten.pipe';
+import { CertificadoLinguagensComponent } from './certificado-linguagens/certificado-linguagens.component';
+import { ProjetosComponent } from './projetos/projetos.component';
+import { DummyComponent } from './dummy/dummy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    AboutMeComponent,
+    MeusCertificadosComponent,
     HomeComponent,
-    MySkilsComponent,
-    SpinnerComponent,
-    ShortenPipe
+    MeuConhecimentoComponent,
+    CertificadoLinguagensComponent,
+    ProjetosComponent,
+    DummyComponent
   ],
   imports: [
     BrowserModule,

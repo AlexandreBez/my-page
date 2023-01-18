@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import * as moment from 'moment';
 import { TranslationService } from '../shared/translation.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-meu-conhecimento',
+  templateUrl: './meu-conhecimento.component.html',
+  styleUrls: ['./meu-conhecimento.component.css']
 })
-export class HomeComponent implements OnInit {
-
-  idade = moment().diff('1999/12/04', 'years');
+export class MeuConhecimentoComponent implements OnInit {
 
   getLanguageValue!: boolean;
 

@@ -1,0 +1,99 @@
+<div class="container-fluid mainDiv">
+    <br>
+    <h3 *ngIf="getLanguageValue">Meu conhecimento</h3>
+    <h3 *ngIf="!getLanguageValue">My knowledge</h3>
+    <hr>
+    <p *ngIf="getLanguageValue">Nivel de conhecimento: 
+        <span class="badge bg-success">Baixo</span>
+        /
+        <span class="badge bg-warning">Medio</span> 
+        /
+        <span class="badge bg-info">Alto</span> 
+    </p>
+    <p *ngIf="!getLanguageValue">Knowledge level: 
+        <span class="badge bg-success">Low</span>
+        /
+        <span class="badge bg-warning">Medium</span> 
+        /
+        <span class="badge bg-info">High</span> 
+    </p>
+    <div class="row text-center">
+        <div class="col text-white">
+            <img class="helpIcons" src="assets/angularIcon.png"
+                alt="angular icon">
+            <br>
+            <span class="badge bg-warning">
+                -
+            </span>
+        </div>
+        <div class="col">
+            <img class="helpIcons" src="assets/bootstrapIcon.png" alt="Bootstrap icon">
+            <br>
+            <span style="margin-left: 2%;" class="badge bg-warning">
+                -
+            </span>
+        </div>
+        <div class="col">
+            <img class="helpIcons" src="assets/jiraIcon.png" alt="Jira icon">
+            <br>
+            <span class="badge bg-info">
+                -
+            </span>
+        </div>
+        <div class="col">
+            <img class="helpIcons" src="assets/kanbanIcon.jpg" alt="Kanban icon">
+            <br>
+            <span class="badge bg-info">
+                -
+            </span>
+        </div>
+        <div class="col">
+            <img class="helpIcons" src="assets/manualTestingIcon.png" alt="Manual Tester icon">
+            <br>
+            <span class="badge bg-info">
+                -
+            </span>
+        </div>
+    </div>
+    <br>
+    <div class="row text-center">
+
+        <div class="col text-white">
+            <img class="helpIcons" src="assets/springbootIcon.png" alt="Spring Boot icon">
+            <br>
+            <span class="badge bg-success">
+                -
+            </span>
+        </div>
+        <div class="col text-white">
+            <img class="helpIcons" src="assets/javaIcon.png" alt="Java icon">
+            <br>
+            <span class="badge bg-success">
+                -
+            </span>
+        </div>
+        <div class="col text-white">
+            <img class="helpIcons" src="assets/mysqlIcon.png" alt="MySQL icon">
+            <br>
+            <span class="badge bg-warning">
+                -
+            </span>
+        </div>
+        <div class="col text-white">
+            <img class="helpIcons" src="assets/sqlServerIcon.png" alt="SQL Server icon">
+            <br>
+            <span class="badge bg-warning">
+                -
+            </span>
+        </div>
+        <div class="col text-white">
+            <img class="helpIcons" src="assets/cypressIcon.png" alt="Cypress icon">
+            <br>
+            <span class="badge bg-success">
+                -
+            </span>
+        </div>
+
+
+    </div>
+</div>
